@@ -1,0 +1,17 @@
+{
+  "name": "プリコネなの",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "ツイッターの文字をプリコネRのミヤコの口癖のなのに変換する拡張",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
