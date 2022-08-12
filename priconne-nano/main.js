@@ -41,4 +41,3 @@ const f = () => {
 };
 
 setInterval(f, 1000);
-
