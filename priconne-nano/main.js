@@ -36,7 +36,8 @@ const f = () => {
 		e.textContent = e.textContent
 			.replaceAll(/(?<=\S+)([!！?？。])/g, "なの$1") // 行末が記号
 			.replaceAll(/(?<=[^!！?？。\n])(\n)/g, "なの$1") // 行末が改行
-			.replaceAll(new RegExp(`([^…!！?？。\n${decodeURIComponent('%C2%B7')}])$`, "g"), "$1なの"); // 末尾に改行も記号もない1行 (三点リーダーは省略されたリンク用、デコードした文字はdmの発言者の区切り文字用)
+			.replaceAll(new RegExp(`([^…!！?？。\n${decodeURIComponent('%C2%B7')}])$`, "g"), "$1なの") // 末尾に改行も記号もない1行 (三点リーダーは省略されたリンク用、デコードした文字はdmの発言者の区切り文字用)
+			.replaceAll(new RegExp(`^さん ${decodeURIComponent('%C2%B7')}$`, "g"), ""); // 日本語のdmの発言者のさんを消す
 	}
 };
 
