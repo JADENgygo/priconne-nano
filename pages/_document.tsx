@@ -12,7 +12,7 @@ export default function Document() {
         <meta property="og:title" content="プリコネなの" />
         <meta property="og:description" content="ツイッターの文字をプリコネRのミヤコの口癖のなのに変換するChrome拡張なの" />
         <meta property="og:url" content="https://priconne-nano.vercel.app" />
-        <meta property="og:image" content="https://priconne-nano.vercel.app/img/card.webp" />
+        <meta property="og:image" content="https://priconne-nano.vercel.app/card.webp" />
         <link rel="icon" href="/peko.png" />
       </Head>
       <body>
